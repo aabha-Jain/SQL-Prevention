@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="UTF-8">
+    <meta name="google-site-verification" content="MDY3acJ_Rio_-gl4velS1Gt3ysX_XYP84qc5zhna1lw" />
+    <meta name="msvalidate.01" content="1260852AAAE0D13F5638A7721A4D3228" />
+    <title>Food Recommendation Appli
+      
+      
+      cation </title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/vnd.microsoft.icon">
+
+    <!-- display nicely on phones -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+    <!-- bootstrap 3 -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <!-- fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,300italic' rel='stylesheet' type='text/css'>
+
+
+    <!-- bust caches by incrementing version of main -->
+    <link href="main.4.css" rel="stylesheet" type="text/css">
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <script src="script.js"></script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <link href="../static/style.css" rel="stylesheet" type="text/css">
+    
+    </head>
+<body>
+    <div class="topnav">
+        
+      <a href="{{ url_for('home') }}">Home</a>
+      <a href="{{ url_for('starters') }}">Starters</a>
+      <a href="{{ url_for('mains') }}">Main Course</a>
+      <a href="{{ url_for('dessert') }}">Dessert</a>
+      <a href="{{ url_for('logout') }}">Logout</a>
+    
+  
+</div>
+    
+     <br>
+    <br>
+    
+    
+    <div class="btn-group">
+  <a href="https://food.ndtv.com/recipe-dum-paneer-951239"><button>Vegetarian</button></a>
+  <a href="https://www.archanaskitchen.com/murgh-ajmeri-recipe"><button>NonVegetarian</button></a>  
+</div>
+    </body>
+</html>
