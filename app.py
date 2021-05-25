@@ -21,9 +21,15 @@ mysql = MySQL(app)
 @app.route('/login', methods =['GET', 'POST'])
 def login():
     msg = ''
+    string = '# $ ? /” \” ^ % & *'
     if request.method == 'POST' and 'username' in request.form and 'password' in request.form:
         username = request.form['username']
         password = request.form['password']
+        
+        for i in string:
+            if i in username:
+                msg = 'Incorrect username / password !'
+                return render_template('login.html',msg=msg) 
         cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
         cursor.execute('SELECT * FROM details WHERE username = % s AND password = % s', (username, password, ))
         account = cursor.fetchone()
